@@ -1,4 +1,5 @@
 import "./App.css";
+import TabelCell from "./TableCell";
 
 function TableGrid() {
   const numberList = [
@@ -15,7 +16,7 @@ function TableGrid() {
   const rows = numberList.map((row, i) => {
     return (
       <tr key={i}>
-        <td>{row}</td>
+        <TabelCell cellData={row} />
       </tr>
     );
   });
@@ -29,7 +30,7 @@ function TableGrid() {
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>Which? Front-end Exercise</header>
+      <header className='App-header'>Which? Front-end Exercise?</header>
       <TableGrid />
     </div>
   );
