@@ -1,4 +1,4 @@
-import { prettyDOM, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import TableGrid from "./TableGrid";
 
 const numberList = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]];
@@ -18,7 +18,10 @@ test("renders grid table Data", async () => {
 });
 
 test("highlight the multiple of selection", async () => {
-  // eslint-disable-next-line testing-library/render-result-naming-convention
-  const result = render(<TableGrid tableData={numberList} />);
-  console.log(prettyDOM(result.container));
+  render(<TableGrid tableData={numberList} />);
+  const eventTrigger = screen.getByTestId("trigger6");
+  const expectedTrigger = screen.getByTestId("trigger12");
+  fireEvent.click(eventTrigger);
+  expect(eventTrigger).toHaveStyle("background-color: rgb(0, 159, 183)");
+  expect(expectedTrigger).toHaveStyle("background-color: rgb(0, 159, 183)");
 });
