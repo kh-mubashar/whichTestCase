@@ -31,34 +31,21 @@ function TableGrid() {
     return false;
   };
   return (
-    <div
-      style={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-      }}
-    >
+    <div className='Grid-column'>
       {numberList.map((row, index) => (
         <div key={index}>
+          {index}
           {row.map((col, index) => (
-            <div
+            <button
               key={index}
-              className={String(col)}
+              className='Grid-cell'
               style={{
-                height: 60,
-                width: 60,
-                margin: 5,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
                 backgroundColor: checkIsMultiple(col) ? "#009FB7" : "#ECA400",
               }}
               onClick={() => getMultipleOf(col)}
             >
               {col}
-            </div>
+            </button>
           ))}
         </div>
       ))}
