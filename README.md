@@ -1,6 +1,34 @@
-# Getting Started with Create React App
+# Which.com Test Case
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### The exercise:
+
+The Project is build from scratch using the create-react-app template and kept simple consisting of two components App which is activing as the main render container and table grid consisting of the main table and grid logic the test cases and style sheets are kept in the same folder for simplicity. with a plenty of room for improvement.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using typescript
+
+To get started you'll need to make sure you have the following software tools installed:
+
+- Git
+- Node.js (version 12 or higher is required)
+- npm (this should be installed along with Node.js)
+
+## Installation and setup
+
+Install all of the project dependencies using npm:
+
+`npm install`
+
+Once installed you can run the Webpack development server:
+
+`npm start`
+
+Now open `http://localhost:3000` in your browser and you should see a Which.com Test Case
+
+To stop the server when no longer needed, you can press `ctrl + c` in the terminal.
+
+And to run your tests use the following command:
+
+`npm test`
 
 ## Available Scripts
 
@@ -18,26 +46,6 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
