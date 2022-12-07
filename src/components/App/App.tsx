@@ -19,6 +19,12 @@ function App() {
   return (
     <div data-testid='app-load' className='App'>
       <header className='App-header'>Which? Front-end Exercise?</header>
+      <pre>
+        Note: The <span className='unselected-text'>Orange</span> color
+        represent unselected fields and the{" "}
+        <span className='selected-text'>blue </span>
+        color represents the color fields that are multiple of the selection
+      </pre>
       <TableGrid tableData={numberList} />
     </div>
   );

@@ -1,6 +1,6 @@
 .Grid-cell {
-  height: 60px;
-  width: 100px;
+  height: 100px;
+  width: 140px;
   margin: 5px 5px 0px 5px;
   display: flex;
   flex-direction: column;
@@ -24,23 +24,18 @@
 
 .Grid-column {
   --grid-cols: 3;
-  --grid-rows: 3;
   display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   .Grid-column{
-      --grid-cols: 2;
-        --grid-rows: 2;
+    --grid-cols: 2;
   }
 }
 
 @media only screen and (max-width: 480px)  {
   .Grid-column {
     --grid-cols: 1;
-    --grid-rows: 1;
   }
 }

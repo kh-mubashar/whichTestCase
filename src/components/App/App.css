@@ -1,6 +1,5 @@
 .App {
   color: #272727;
-  background-color: #696773;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -11,4 +10,12 @@
 
 .App-header {
   font-size: calc(10px + 2vmin);
+}
+
+.unselected-text{
+  color:#ECA400;
+}
+
+.selected-text{
+  color: #009FB7;
 }

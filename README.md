@@ -4,6 +4,8 @@
 
 The Project is build from scratch using the create-react-app template and kept simple consisting of two components App which is activing as the main render container and table grid consisting of the main table and grid logic the test cases and style sheets are kept in the same folder for simplicity. with a plenty of room for improvement.
 
+The Grid is developed in the column wise approach in order to change the number of column the user can simply update the css grid with currently is set to 3 column per row as specified in requirement docs.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using typescript
 
 To get started you'll need to make sure you have the following software tools installed:
