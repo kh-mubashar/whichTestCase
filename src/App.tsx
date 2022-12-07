@@ -1,5 +1,4 @@
 import "./App.css";
-// import TabelCell from "./TableCell";
 import React from "react";
 
 function TableGrid() {
@@ -31,17 +30,7 @@ function TableGrid() {
     }
     return false;
   };
-  // const rows = numberList.map((row, i) => {
-  //   return (
-  //     <tr key={i}>
-  //       <TabelCell cellData={row} />
-  //     </tr>
-  //   );
-  // });
   return (
-    // <table>
-    //   <tbody>{rows}</tbody>
-    // </table>
     <div
       style={{
         width: "100%",
@@ -58,7 +47,6 @@ function TableGrid() {
               style={{
                 height: 60,
                 width: 60,
-                border: "2px solid red",
                 margin: 5,
                 display: "flex",
                 flexDirection: "column",
