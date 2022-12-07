@@ -36,6 +36,7 @@ function TableGrid() {
         width: "100%",
         display: "flex",
         flexDirection: "row",
+        justifyContent: "center",
       }}
     >
       {numberList.map((row, index) => (
