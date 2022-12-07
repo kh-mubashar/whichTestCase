@@ -34,7 +34,6 @@ function TableGrid() {
     <div className='Grid-column'>
       {numberList.map((row, index) => (
         <div key={index}>
-          {index}
           {row.map((col, index) => (
             <button
               key={index}
