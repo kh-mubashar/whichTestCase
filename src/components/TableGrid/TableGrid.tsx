@@ -2,7 +2,7 @@ import React from "react";
 import "./TableGrid.css";
 
 type TableGridProps = {
-  tableData?: number[][];
+  tableData?: number[];
 };
 
 function TableGrid({ tableData }: TableGridProps) {
@@ -25,19 +25,19 @@ function TableGrid({ tableData }: TableGridProps) {
       {tableData &&
         tableData.map((row, index) => (
           <div key={index}>
-            {row.map((col: number, index: number) => (
-              <button
-                data-testid={"trigger" + col}
-                key={index}
-                className='Grid-cell'
-                style={{
-                  backgroundColor: checkIsMultiple(col) ? "#009FB7" : "#ECA400",
-                }}
-                onClick={() => getMultipleOf(col)}
-              >
-                {col}
-              </button>
-            ))}
+            {/* {row.map((col: number, index: number) => ( */}
+            <button
+              data-testid={"trigger" + row}
+              key={index}
+              className='Grid-cell'
+              style={{
+                backgroundColor: checkIsMultiple(row) ? "#009FB7" : "#ECA400",
+              }}
+              onClick={() => getMultipleOf(row)}
+            >
+              {row}
+            </button>
+            {/* ))} */}
           </div>
         ))}
     </div>
