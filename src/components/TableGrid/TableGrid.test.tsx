@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import TableGrid from "./TableGrid";
 
-const numberList = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]];
+const numberList = Array.from({ length: 12 }, (_, i) => i + 1);
 
 test("renders empty grid table", () => {
   render(<TableGrid />);
