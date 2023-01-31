@@ -1,6 +1,23 @@
 # Which.com Test Case
 
-### The exercise:
+### Goal
+We would like you to create a client-side web application to help a child understand multiplication. Your application will display a grid of numbers. When a child selects a number, the multiples of that chosen number should be highlighted.
+
+### Functional requirements
+The application must display numbers from 1 to 144.
+When a number is clicked, all numbers which are a multiple of the chosen number must be highlighted.
+When a subsequent number is clicked, all numbers which are a multiple of the new number must be highlighted. Any numbers which are not multiples of the new number should no longer be highlighted.
+### Visual requirements
+Each number must be within a large clickable box.
+Each number must be horizontally and vertically centered within their clickable box.
+The boxes must be laid out evenly within a grid.
+On mobile and small screen devices, one number must be displayed in each grid row.
+On tablet and middle sized devices, two numbers must be displayed in each grid row.
+On desktop and large screen devices, three numbers must be displayed in each grid row.
+The grid should have a maximum width so that the clickable boxes do not get too large.
+The grid should be horizontally centered on the screen.
+
+### The Process:
 
 The Project is build from scratch using the create-react-app template and kept simple consisting of two components App which is activing as the main render container and table grid consisting of the main table and grid logic the test cases and style sheets are kept in the same folder for simplicity. with a plenty of room for improvement.
 
